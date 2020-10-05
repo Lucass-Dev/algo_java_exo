@@ -1,7 +1,10 @@
 package com.company;
 
 public class Main {
-
+    /**
+     * Print les differents éléments de la liste
+     * @param score tableau de int
+     */
     static void printScore(int score[]){
         for (int i = 0; i < score.length; i++){
             System.out.println(score[i]);
@@ -9,6 +12,11 @@ public class Main {
 
     }
 
+    /**
+     * permet de connaitre le highscore
+     * @param score
+     * @return le highscore
+     */
     static int highScore(int score[]){
         int highScore = 0;
         for (int i = 0; i < score.length; i++){
@@ -18,6 +26,12 @@ public class Main {
         }
 
     return highScore;}
+
+    /**
+     * permetde savoir quel nombre est superieur à 10
+     * @param score
+     * @return etat du boolean isSuperior
+     */
 
     static boolean isSuperiorTen(int score[]){
         int a = 10;
