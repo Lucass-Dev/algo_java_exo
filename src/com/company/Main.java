@@ -5,7 +5,7 @@ public class Main {
      * Print les differents éléments de la liste
      * @param score tableau de int
      */
-    static void printScore(int score[]){
+    public static void printScore(int score[]){
         for (int i = 0; i < score.length; i++){
             System.out.println(score[i]);
         }
@@ -17,7 +17,7 @@ public class Main {
      * @param score
      * @return le highscore
      */
-    static int highScore(int score[]){
+    public static int highScore(int score[]){
         int highScore = 0;
         for (int i = 0; i < score.length; i++){
             if (score[i]>highScore){
@@ -28,12 +28,12 @@ public class Main {
     return highScore;}
 
     /**
-     * permetde savoir quel nombre est superieur à 10
+     * permetde savoir si au moins 1 nombre est supérieur à 10
      * @param score
      * @return etat du boolean isSuperior
      */
 
-    static boolean isSuperiorTen(int score[]){
+    public static boolean isSuperiorTen(int score[]){
         int a = 10;
         boolean isSuperior = false;
         for (int i = 0; i<score.length; i++){
