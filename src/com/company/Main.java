@@ -39,17 +39,17 @@ public class Main {
         for (int i = 0; i<score.length; i++){
             if(score[i]>=a){
                 isSuperior = true;
-                System.out.println(score[i] + " est supérieur à 10");
             }
         }
     return isSuperior;}
 
 
     public static void main(String[] args) {
-        int score[] = {24, 101, 1234, 544, 102, 90, 2};
+        int score[] = {24, 1, 1234, 544, 102, 90, 2};
 
         printScore(score);
-        System.out.println(highScore(score));
+        System.out.println("La valeur la plus grande est : " + highScore(score));
         isSuperiorTen(score);
+        System.out.println("Y'a-t-il une valeur supérieur à 10 ? : "+isSuperiorTen(score));
     }
 }
